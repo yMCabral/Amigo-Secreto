@@ -3,6 +3,18 @@ let listaDeNomes = [];
 let armazenarNomes = (listaDeNomes);
 let nomeSorteado = sortearNomeAleatorio;
 
+function adicionarNome() {
+    const nomeInput = document.getElementById('nomeInput');
+    const nome = nomeInput.value.trim();
+    if (nome) {
+        listaDeNomes.push(nome);
+        nomeInput.value = '';
+        mostrarNomes();
+    }else {
+        alert('Por favor, insira um nome válido.');
+    }
+}
+
 function sortearNomeAleatorio() {
     let nomeSorteado = listaDeNomes [Math.floor(Math.random() * listaDeNomes.length)];
     console.log (listaDeNomes);
