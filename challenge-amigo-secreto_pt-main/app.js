@@ -11,3 +11,9 @@ function sortearNomeAleatorio() {
 document.querySelector("armazenarNomes").addEventListener("click", ()  => {
     console.log (listaDeNomes);
 })
+
+function limparLista() {
+    nomes = [];
+    document.getElementById('resultado').innerText = '';
+    mostrarNomes();
+}
