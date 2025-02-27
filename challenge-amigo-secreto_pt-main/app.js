@@ -8,4 +8,6 @@ function sortearNomeAleatorio() {
     console.log (listaDeNomes);
 }
 //após colocar o nome
-
+document.querySelector("armazenarNomes").addEventListener("click", ()  => {
+    console.log (listaDeNomes);
+})
