@@ -20,13 +20,15 @@
         <section class="input-section">
             <h2 class="section-title">Digite os nomes que deseja sortear </h2>
             <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
-                <button class="" onclick="armazenarNomes()">Adicionar</button>
+                <input type="text" id="nomeInput" class="input-name" placeholder="Digite um nome">
+                <button class="" onclick="adicionarNome()"> Adicionar </button>
             </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
-
+            <ul id="lista" class="name-list"></ul>
+        
+            <h2 id="tituloLista">Lista de Amigos</h2>
+            <ul id="listaAmigos" class="name-list" aria-labelledby="tituloLista" role="list"></ul>
+            <p id="resultado" class="result-text"></p>
+            
             <div class="button-container">
                 <button class="button-draw" onclick="sortearNomeAleatorio()" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
@@ -34,6 +36,7 @@
                 </button>
             </div>
             <button class="clear-button" onclick="limparLista()">Limpar Lista</button>
+            <button id="armazenarNomes">Mostrar Nomes no Console</button>
         </section>
     </main>
 
